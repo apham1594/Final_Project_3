@@ -25,4 +25,24 @@ function draw () {
 
 draw()
 
+//Changing the position of the red dot
+
+function move(distance){
+    position= position + distance;
+    draw()
+}
+
+//Moving the red dots with arrow keys
+
+window.addEventListener('keydown', function (event) {
+    event.preventDefault()
+
+    if (event.key === 'ArrowRight') {
+        move(10)
+    }
+    if (event.key === 'ArrowLeft') {
+        move(-10)
+    }
+})
+
 
