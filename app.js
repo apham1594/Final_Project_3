@@ -45,4 +45,21 @@ window.addEventListener('keydown', function (event) {
     }
 })
 
+//Check to see who wins
+
+function checkWinner(){
+    if (position > middle){
+        alert('Right Wins!')
+    }
+    if (position < middle){
+        alert('Left Wins!')
+    }
+    if (position === middle){
+        alert('Its a Tie!')
+    }
+
+}
+
+setTimeout(checkWinner,10000)
+
 
